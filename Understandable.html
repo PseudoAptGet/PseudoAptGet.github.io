@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessibility Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  </head>
+
+  <body>
+    <div class="container-fluid" style = "border: solid">
+        <p class="h1" id="title">Accessibility Analysis</p>
+        <div class="container-fluid" style = "background:  red"> <!--div class just for nav in case specific changed needed.-->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">This is the navigation bar</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Navigation Bar</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Overview</a></li>
+                  <li><a href="Perceivable.html">Tenet 1: Perceivable</a></li>
+                  <li><a href="Operable.html">Tenet 2: Operable</a></li>
+                  <li class="active"><a href="Understandable.html">Tenet 3: Understandable</a></li>
+                  <li><a href="Robust.html">Tenet 4: Robust</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="contactMe.html">Contact<span class="sr-only">(current)</span></a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+      </div>  
+      <!-- ACTUAL TEXT -->
+      <!--TODO: make a sidebar where all the subrecommendations can be flicked back and forth through.-->
+      <p class="h1 text-center">Understandable</p>
+      <p>This one is mostly common sense. Think back to your SAT grammar prep, and try to use it so that most people can understand your website. On top of that, this section places heavy emphasis on the rules surrounding form clarity, and interface interactivity.</p>
+      
+      <p class="h3">(Comprehensible) Navigation</p>
+      <p>WCAG recommends that the language in a accessible website be comprehensible. To that end, it should be grammatically correct, and if there is any jargon, there should be some explanation of what it means.</p>
+      <p>As an example, suppose that I am a lawyer that specializes in construction injury, and I casually dropped the word pneumonoultramicroscopicsilicovolcanoconiosis*. I don't even know if I spelled the word right, but I am obligated to provide some definition for it in an accessible spot. I know! Let me put the definition below.</p>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="pneumonoultramicroscopicsilicovolcanoconiosis">
+        *pneumonoultramicroscopicsilicovolcanoconiosis: A lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosis.
+      </button>
+      <p>For additional information surrounding comprehensible text, please see any website but this one. Thank you, and have a nice day.</p>
+      <p>Snark set aside, there are a couple of extra recommendations. Most of them revolve around making the interactive elements predictable such that navigating the site is easy and predictable.</p>
+
+      <p class="h3">Error Checking</p>
+      <p>WCAG also recommends some amount of error checking aid, specifically in the context of filling out forms/ inputting information. Here's a basic list that gets the main points across.</p>
+      <ul>
+          <li>If the user makes an error when inputting information, the error is clearly conveyed.</li>
+          <li>To go a step further, automatic error detection and suggestions to solve it should be implemented. For example, after entering your email, the website can query to see if it's a valid one while you continue entering other bits of information such as your credit card information and social security number (because let's face it, we really want the Nigerian prince to send the funds to the right bank account).</li>
+          <li>If the user makes an error, there should be an option to reverse the submission, and there should be a final confirmation page where the user can review the information they have currently entered.</li>
+      </ul>
+
+      
+    </body>

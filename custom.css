@@ -1,0 +1,14 @@
+#title {
+    text-align: center;
+}
+
+#title-image {
+    justify-content: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+#starter-paragraph {
+    padding-top: 25px;
+}

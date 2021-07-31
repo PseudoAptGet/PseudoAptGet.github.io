@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessibility Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  </head>
+
+  <body>
+    <div class="container-fluid" style = "border: solid">
+        <p class="h1" id="title">Accessibility Analysis</p>
+        <div class="container-fluid" style = "background:  red"> <!--div class just for nav in case specific changed needed.-->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">This is the navigation bar</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Navigation Bar</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Overview</a></li>
+                  <li><a href="Perceivable.html">Tenet 1: Perceivable</a></li>
+                  <li><a href="Operable.html">Tenet 2: Operable</a></li>
+                  <li><a href="Understandable.html">Tenet 3: Understandable</a></li>
+                  <li class="active"><a href="Robust.html">Tenet 4: Robust</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="contactMe.html">Contact<span class="sr-only">(current)</span></a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+      </div>  
+      <!-- ACTUAL TEXT -->
+      <!--TODO: make a sidebar where all the subrecommendations can be flicked back and forth through.-->
+      <p class="h1">Robust</p>
+      <p>There really isn't much to say on this recommendation (and in my defense, this was the shortest section in WCAG, as well as the one with the vaguest recommendations. Two major points are made.</p>
+      <ol>
+          <li>All starting tags must have ending tags so that assistive technology like screenreaders can work properly (and so that I can scrape the website's data without creating special exceptions in my python script to handle poor coding habits).</li>
+          <li>User interface components should have unique id's and the role can be easily determined.</li>
+      </ol>
+      <p class="h3 text-center">To pad the size of the content of this specific webpage, I decided to embed an image :)</p>
+
+      <div class="container-fluid text-center" style="border: solid">
+        <img src="https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg" class="img-fluid" alt="A cute picture of a cat wearing a really cute hat" id="padding-the-stats-image"> 
+        <figcaption class="figure-caption"> A picture is worth a thousand words, so pretend that this webpage is really large because it has carefully selected words that demonstrate my competence. Thank you for your time.</figcaption>
+        <figcaption class="figure-caption"> - me_irl </figcaption>
+      </div>

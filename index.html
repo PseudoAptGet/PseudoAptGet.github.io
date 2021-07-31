@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessibility Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  </head>
+
+  <body>
+    <div class="container-fluid" style = "border: solid">
+      <p class="h1 text-center" id="title" >Accessibility Analysis</p>
+      <div class="container-fluid" style = "background:  red"> <!--div class just for nav in case specific changed needed.-->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">This is the navigation bar</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Navigation Bar</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Overview</a></li>
+                <li><a href="Perceivable.html">Tenet 1: Perceivable</a></li>
+                <li><a href="Operable.html">Tenet 2: Operable</a></li>
+                <li><a href="Understandable.html">Tenet 3: Understandable</a></li>
+                <li><a href="Robust.html">Tenet 4: Robust</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="contactMe.html">Contact<span class="sr-only">(current)</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>  
+      <!--actual text-->
+      <div class="container-fluid text-center" style="border: solid">
+        <img src="https://preview.redd.it/qaifncf1hc651.png?auto=webp&s=9e76f810bd95ac7eb887669b65e16f8fb28c2b79" class="img-fluid" alt="A cute picture of a cat believing in accessibility for all" id="title-image"> 
+        <figcaption class="figure-caption"> I see now that the circumstances of one's birth is irrelevent. It is what you do with the gift of life that determines who you are. Thus, we should try our best to enable others to live to their fullest potential</figcaption>
+        <figcaption class="figure-caption"> -Mewtwo (probably)</figcaption>
+      </div>
+      <p class="h2">A Brief Overview on the Purpose of this Website.</p>
+      <!-- NOW WE GET TO THE REAL CONTENT. PREPARE UP. -->
+      <p id="starter-paragraph">The purpose of this website (Yes, I know it sounds like some college student writing a lab report or thesis) is to have fun with bootstrap by building a website, and focus the content of the website on web-accessibility requirements. I will go over the accessibility criteria under WCAG 2.1, and try to implement such criteria while experimenting with bootstrap.</p>
+      <p>Naturally, that means that I will have to implement some of the bootstrap solutions to accessibility requirements, and this website will document what the solutions I know of are, and briefly go over how to implement them. For further information, the code for this website is hosted on github, and the github link to my profile page is in the "contact me" section of the navbar. You can, if you're feeling adventerous, also simply use inspect element, and see the code yourself in the localized context.</p>
+      <p>In the spirit of making this website accessible, and meeting the operable/ navigatable section of WCAG 2.1, I recommend that you see the navbar's 4 tenets section, and check each of them out.</p>
+      <!--TODO: delete this when all other tod o's are done -->
+      
+    </div>
+  </body>
+</html>
